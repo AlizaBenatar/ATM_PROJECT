@@ -140,13 +140,17 @@ def atm_menu(customer):
         else:
             print("Invalid choice. Please try again.")
 
-#בדיקה שמריצה את הפונקציה
-if __name__ == "__main__":
+# פונקציה שמריצה את התוכנית 
+def main():
     logged_in_customer = login(customers)
     if logged_in_customer:
         atm_menu(logged_in_customer)
     else:
         print("Failed to login.")
+
+if __name__ == "__main__":
+    main()
+
 
 
 
